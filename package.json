@@ -1,0 +1,38 @@
+{
+  "name": "stayzen",
+  "version": "1.0.0",
+  "description": "> Find your stay. Book with ease.  \r A modern hotel booking platform focused on simplicity, speed, and clarity.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "migration": "npx sequelize-cli migration:generate --name Hotel-Table",
+    "build": "tsc && node -e \"require('fs').copyFileSync('.env', 'dist/.env')\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Samratcodebase/StayZen.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/Samratcodebase/StayZen/issues"
+  },
+  "homepage": "https://github.com/Samratcodebase/StayZen#readme",
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "mysql2": "^3.22.1",
+    "sequelize": "^6.37.8",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.6.0",
+    "sequelize-cli": "^6.6.5",
+    "ts-node": "^10.9.2",
+    "tsc-watch": "^7.2.0",
+    "typescript": "^6.0.3"
+  }
+}
