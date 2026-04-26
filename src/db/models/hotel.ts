@@ -1,6 +1,6 @@
 import { Model, DataTypes } from "sequelize";
 import type {
-  Sequelize,
+
   InferAttributes,
   InferCreationAttributes,
   CreationOptional,
@@ -109,3 +109,5 @@ Hotel.init(
     timestamps: false,
   },
 );
+
+export default Hotel;
