@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "migration": "npx sequelize-cli migration:generate --name Hotel-Table",
+    "migration": "npx sequelize-cli migration:generate --name Add-Deleted-at-To-Hotel-Table",
     "build": "tsc && node -e \"require('fs').copyFileSync('.env', 'dist/.env')\""
   },
   "repository": {

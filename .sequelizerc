@@ -8,8 +8,9 @@ module.exports = {
 
   //---------------------------------------------------------//
 
-  config: path.resolve("dist/config", "config.cjs"),
+  config: path.resolve("src/config", "config.cjs"),
   "models-path": path.resolve("dist/db/models"),
   "seeders-path": path.resolve("dist/db/seeders"),
-  "migrations-path": path.resolve("dist/db/migrations"),
+  "migrations-path": path.resolve("src/db/migrations"),
+  // "migrations-path": path.resolve("dist/db/migrations"),
 };
