@@ -2,7 +2,7 @@ import express from "express";
 import type { Express, Request, Response } from "express";
 import dotenv from "dotenv";
 import hotelRoutes from "./routes/hotel.routes.js";
-import sequelize from "./db/models/sequelize.config.js";
+import sequelize from "./db/sequelize.config.js";
 
 // Load environment variables
 dotenv.config();

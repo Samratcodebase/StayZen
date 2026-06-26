@@ -5,7 +5,7 @@ import type {
   CreationOptional,
 } from "sequelize";
 
-import sequelize from "./sequelize.config.js";
+import sequelize from "../sequelize.config.js";
 class Hotel extends Model<
   InferAttributes<Hotel>,
   InferCreationAttributes<Hotel>
@@ -102,7 +102,7 @@ Hotel.init(
       allowNull: false,
       defaultValue: DataTypes.NOW,
     },
-    deleted_at: {
+    deleted_At: {
       type: DataTypes.DATE,
       allowNull: true,
       defaultValue: null,
