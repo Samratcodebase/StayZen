@@ -26,7 +26,7 @@ class Hotel extends Model<
   declare rating: CreationOptional<number | null>;
   declare created_at: CreationOptional<Date>;
   declare updated_at: CreationOptional<Date>;
-  declare deleted_At: CreationOptional<Date>;
+  declare deleted_At: CreationOptional<Date|null>;
 }
 
 Hotel.init(
