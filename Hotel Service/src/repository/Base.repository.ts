@@ -3,6 +3,7 @@ import {
   type CreationAttributes,
   type ModelStatic,
   type WhereOptions,
+  type Attributes,
 } from "sequelize";
 
 abstract class BaseRepository<T extends Model> {
@@ -49,13 +50,15 @@ abstract class BaseRepository<T extends Model> {
     return record;
   }
 
-  async update(id: number, data: Partial<T>) {
+  async update(id: number, data: Partial<Attributes<T>>) {
     const record = await this.model.findByPk(id);
+
     if (!record) {
       throw new Error(`Record with id:${id} not found`);
     }
-    Object.assign(record, data);
-    await record.save();
+
+    await record.update(data);
+
     return record;
   }
 }
